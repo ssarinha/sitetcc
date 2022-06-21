@@ -1,0 +1,242 @@
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caixa{
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.87;
+    top: 0;
+}
+
+.caixa-cabecalho{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+
+.logo1{
+    height: 10%;
+    width: 10%;
+    padding:1px ;
+}
+
+.caixa-ul{
+    display: flex;
+    list-style-type: none;
+    margin: 20px 0 0 124px;
+}
+
+a{
+    
+    cursor: grab;
+   
+    
+}
+
+.caixa-li{
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+
+.pesquisa{
+    margin: 34px 90px 0 0;
+    height: 50px;
+}
+
+.pesquisa input{
+    background-image: url(lupa.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 94%;
+    height: 25px;
+    border: #000000 1px solid;
+    
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container{
+    display: flex;
+    margin: 10%;
+    align-items: center;
+}
+
+.container-img{
+    width: 40%;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.container-texto{
+    width: 50%;
+}
+
+.container_img{
+    width: 30%;
+
+}
+
+.container_titulo{
+    text-align: center;
+    color: white;
+}
+
+.container_p{
+    text-align: justify;
+    margin: 40px;
+    color: white;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center
+}
+
+
+.container3{
+    display: flex;
+    margin: 0 10% 0  10%;
+    margin-top: 100px;
+}
+
+.container3_img{
+    width: 35%;
+}
+
+.container3_titulo{
+    text-align: center;
+    color: white;
+}
+
+.container3_p{
+    text-align: justify;
+    margin: 40px;
+    color: white;
+}
+
+footer{
+    margin: 0;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-areas: 
+    "localizaçao logo redes";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 30vh;
+}
+
+.localizaçao{
+    padding: 15px;
+    grid-area: localizaçao;
+    margin-left: 15px;
+
+}
+
+.redes{
+    margin: 30px;
+    text-align: end;
+    justify-items: end;
+    align-items: flex-end;
+}
+
+.escrita{
+    text-align: right;
+    margin: 20px;
+}
+
+.fotoLocalização{
+    margin: 5px;
+    width: 37px;
+    justify-content: center;
+}
+
+ul{
+    padding: 10px;
+    margin-top: 0px;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.logoFooter{
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+img {
+    width: 30%;
+    align-items: center;
+    align-self: center;
+}
+
+.paragrafoFooter{
+    align-self: center;
+    
+}
+
+.logosredes{
+    margin: 4px;
+    width: 30px;
+}
+
+.ifood{
+    width: 60px;
+}
+
+@media (max-width: 394px) {
+    .container3{
+        display: flex;
+        margin: 0 10% 0  10%;
+        margin-top: 200px;
+        flex-direction: column;
+    }
+
+    .container3_p{
+        text-align: justify;
+        margin: 0;
+        color: white;
+    }
+
+    .container{
+        display: flex;
+        margin: 10%;
+        align-items: center;
+    }
+    
+
+    footer{
+        margin: 10px;
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        "localizaçao"
+        "redes"
+        "logo";
+        grid-template-columns: 1fr;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        height: 30vh;
+    }
+    
+}
